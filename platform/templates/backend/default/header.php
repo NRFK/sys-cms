@@ -17,5 +17,5 @@
 	<body>
 		<div class="container mt-5">
 			<div id="logoId" class="">
-				Admin
+				<h2>Admin</h2>
 			</div>

@@ -5,28 +5,10 @@
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/database.php';
 
-/**
- * A simple placeholder for a robust error logging mechanism.
- * In a production environment, this should log to a file, a service (e.g., Sentry),
- * or a system log, rather than directly displaying errors to the user.
- *
- * @param string $message The error message to log.
- */
 function logError(string $message): void {
     error_log("[CMS Error] " . $message);
 }
 
-/**
- * Renders an admin page, specifically for the backend administration panel.
- * All paths for templates and pages are assumed to be relative to the 'platform' directory.
- *
- * @param string $page The requested page name (e.g., 'dashboard', 'users/list'). Defaults to 'home'.
- * @param string|null $template The specific template name to use within the 'backend' theme group.
- * If null, it attempts to get from $_GET['template'], then config, then defaults to 'default'.
- * @param array $config Global configuration settings, typically loaded from config.php.
- * Passed as an argument for better testability and explicit dependency.
- * @return void
- */
 function renderAdmin(string $page = 'home', ?string $template = null, array $config): void {
     // Sanitize $page: Allow only alphanumeric characters, underscores, dashes, and forward slashes.
     $page = preg_replace('/[^a-zA-Z0-9_\-\/]/', '', $page);

@@ -1,7 +1,7 @@
 </div>
 
 <!-- Bootstrap JS -->
-<script src="/structure/templates/default/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js" integrity="sha512-Tc0i+vRogmX4NN7tuLbQfBxa8JkfUSAxSFVzmU31nVdHyiHElPPy2cWfFacmCJKw0VqovrzKhdd2TSTMdAxp2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
@@ -40,7 +40,7 @@
 	</div>
 	<div class="offcanvas-body">
 		<p>Logged in as <?php echo $_SESSION['username']; ?></p>
-		<a href="/structure/user/logout.php" class="btn btn-danger w-100">Logout</a>
+		<a href="/admin/user/logout.php" class="btn btn-danger w-100">Logout</a>
 	</div>
 </div>
 <?php } ?>

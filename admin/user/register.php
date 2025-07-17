@@ -2,12 +2,10 @@
 session_start();
 
 // Redirect to login if not authenticated
-/*
 if (!isset($_SESSION['user_id'])) {
-	header("Location: /user/login.php");
+	header("Location: /admin/?route=login");
 	exit;
 }
-	*/
 ?>
 <?php $title = 'NK Login'; ?>
 <?php require('../assets/header.php'); ?>
@@ -39,4 +37,4 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 </div>
 
-<?php require('..//assets/footer.php'); ?>
+<?php require('../assets/footer.php'); ?>
