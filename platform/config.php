@@ -4,8 +4,7 @@ $config = [
 	'default_template' => 'default'
 ];
 
-$publicRoutes = ['home', 'login', 'identifier', 'register'];
-$adminPublicRoutes = ['login','register'];
+$publicRoutes = ['login', 'register'];
 
 /*
 
