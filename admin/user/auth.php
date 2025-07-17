@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Auth failed
     $_SESSION['error'] = "Invalid credentials.";
-    header("Location: /user/login.php");
+    header("Location: /admin/?route=login");
     exit();
 }
 ?>
