@@ -2,10 +2,12 @@
 session_start();
 
 // Redirect to login if not authenticated
+/*
 if (!isset($_SESSION['user_id'])) {
 	header("Location: /user/login.php");
 	exit;
 }
+	*/
 ?>
 <?php $title = 'NK Login'; ?>
 <?php require('../assets/header.php'); ?>
