@@ -43,6 +43,7 @@ $menuItems = [
         'new_window' => false,
         'auth' => null // Visible to everyone
     ],
+	/*
     'Databases' => [
         'icon' => 'bi-database-fill-gear',
         'auth' => null, // Main menu item visible to everyone (sub-items have their own auth)
@@ -61,6 +62,7 @@ $menuItems = [
             ],
         ]
     ],
+	*/
     'Users' => [
         'icon' => 'bi-gear', // This main menu item itself is protected (visible only to logged-in)
         'auth' => true,      // Visible to logged-in users only
@@ -83,12 +85,6 @@ $menuItems = [
     'MGMT Apps' => [
         'link' => '/mgmt',
         'icon' => 'bi-person-badge-fill',
-        'new_window' => false,
-        'auth' => true // Visible to logged-in users only
-    ],
-    'Redirect Check' => [
-        'link' => '/redirect-check',
-        'icon' => 'bi-link-45deg',
         'new_window' => false,
         'auth' => true // Visible to logged-in users only
     ],
