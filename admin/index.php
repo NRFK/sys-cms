@@ -15,14 +15,6 @@ if (!isset($publicRoutes) || !is_array($publicRoutes)) {
     error_log("[CMS Error] \$publicRoutes not properly defined in config.php");
 }
 
-// --- TEMPORARY DEBUGGING LINES START ---
-echo "DEBUGGING: <pre>";
-echo "Current \$route: '{$route}'\n";
-echo "Content of \$publicRoutes:\n";
-var_dump($publicRoutes);
-echo "</pre>";
-// --- TEMPORARY DEBUGGING LINES END ---
-
 if (!in_array($route, $publicRoutes)) {
     if (!isset($_SESSION['user_id'])) {
         header("Location: /admin/?route=login"); // Redirect to the admin login page
